@@ -1,0 +1,302 @@
+
+/* import fonts css file */
+@import url(./fonts.css);
+
+/* import css variables */
+@import url(./partials/_variables.css);
+
+/* import global classes */
+@import url(./partials/_global.css);
+
+
+/* start navbar */
+.header-area .main-menu .navbar{
+	padding: 1rem 0rem;
+}
+
+.header-area .navbar .nav-link{
+	font: normal 15px var(--roboto);
+	text-transform: uppercase;
+	padding: 0rem 1.5rem;
+	color: var(--title-color);
+}
+.header-area .navbar .active .nav-link,
+.header-area .navbar .nav-link:hover{
+	color: var(--primary-color);
+}
+.header-area .main-menu .navbar button{
+	outline: 0 !important;
+}
+.header-area .main-menu .navbar .fa{
+	color: var(--primary-color);
+	font-size: 30px;	
+}
+/* end navbar */
+
+/* Banner Area */
+.site-main .site-banner{
+	background: url('../img/banner/home-banner.png') no-repeat;
+	background-position: 10% 40%;
+}
+
+/* import css variables */
+.site-main .site-banner .site-title h3{
+	padding-top: 12rem;
+	font-weight: bold;
+	color: #000;
+}
+.site-main .site-banner .site-title h3::after{
+	content: "";
+	height: 2px;
+	width: 18vw;
+	background: #000;
+	margin-left: 5%;
+	display: inline-block;
+	transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+	font-size: 4rem;
+	font-weight: bold;
+	color: #000;
+}
+.site-main .site-banner .site-title h4{
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #000;
+}
+
+.site-main .site-banner .banner-image>img{
+	padding: 10rem 2rem 4rem;
+}
+/* End Banner Area */
+
+/* Strat About Area */
+
+.site-main .about-area .about-title h2 > span{
+	display: block;
+	font: normal bold 50px/60px var(--roboto);
+	letter-spacing: 15px;
+}
+.site-main .about-area .paragraph > p{
+	padding: .4rem 0;
+}
+/* End About Area */
+
+/* Start Services Area */
+.site-main .services-area h1{
+	font-size: 35px;
+}
+.site-main .services-area .services-list{
+	padding: 3rem 0;
+}
+.site-main .services-area .services{
+	background: rgba(71, 88, 221, 0.04);
+	padding: 2rem 0;
+	margin: 1rem 0;
+	transition: box-shadow .4s ease;
+}
+.site-main .services-area .services:hover{
+	box-shadow: var(--box-shadow);
+	cursor: pointer;
+}
+.site-main .services-area .services h5{
+	font-size: 15px;
+	font-weight: bold;
+}
+/* End Services Area */
+
+/* Start Skill Area */
+.site-main .skill-area .single-brand{
+	border: 1px solid var(--border-color);
+	text-align: center;
+	padding: 1rem 0.5rem;
+	margin: .9rem 0;
+	width: 180px;
+	height: 100px;
+	cursor: pointer;
+	transition: transform .4s ease;
+}
+.site-main .skill-area .single-brand img{
+	width: 100%;
+}
+.site-main .skill-area .single-brand:hover{
+	box-shadow: 0px 5px 20px rgba(133,79,238,0.3);
+	transform: scale(1.05)
+}
+.site-main .skill-area .single-brand:hover > img{
+	filter: brightness(1.20);
+}
+
+.site-main .skill-area .experience-area{
+	padding: 1rem 3rem;	
+}
+.site-main .skill-area .experience-area span{
+	display: block;
+}
+.site-main .skill-area .experience-area .years-area{
+	background: url('../img/client-info-bg.png') no-repeat 45px 20px;
+	padding: 4rem 0;
+	width: 40rem;
+	height: 18rem;
+	padding-left: 6rem;
+	position: relative;
+}
+.site-main .skill-area .experience-area .bg-panel{
+	position: absolute;
+	left: -190px;
+	top: 0%;
+	background: rgba(71, 88, 221, 0.03);
+	width: 400px;
+	height: 400px;
+	margin-left: 340px;
+	z-index: -1;
+}
+.site-main .skill-area .experience-area .years-area .years{
+	font: normal bold 100px/50px var(--roboto);
+	color: var(--primary-color2);
+	z-index: 2;
+}
+.site-main .skill-area .experience-area .years-area h2 > span{
+	font: normal bold 30px/35px var(--roboto);
+}
+.site-main .skill-area .experience-area .call-area{
+	padding-left: 8rem;
+}
+.site-main .skill-area .experience-area .call-area span{
+	color: #854fee;
+}
+/* End Skill Area */
+
+/* Start Project Area */
+.site-main .project-area .btn-group button{
+	border: none;
+	background: transparent;
+	font: normal 400 16px/130px var(--roboto);
+	text-transform: uppercase;
+	outline: 0px !important;
+	box-shadow: none !important;
+}
+.site-main .project-area .btn-group button:hover{
+	color: #854fee;
+}
+
+.site-main .project-area .grid .our-project .title h4{
+	font: normal 700 17px/20px var(--roboto);
+}
+.site-main .project-area .grid .our-project .img img{
+	width: 100%;
+	border-radius: 4px;
+	transition: .3s linear;
+}
+.site-main .project-area .grid .our-project .img img:hover{
+	transform: scale(1.03);
+	filter: brightness(1.05) drop-shadow(0px 5px 8px #0007);
+}
+/* End Project Area */
+
+
+/* Start About Area */
+.site-main .client-area .client{
+	background: #ffffff10;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+	margin: 3rem 0rem;
+	cursor: pointer;
+}
+.site-main .client-area .client-img{
+	padding: 2rem;
+}
+.site-main .client-area .about-client{
+	padding-top: 2rem;
+}
+.site-main .client-area .about-client h4{
+	font: normal 600 20px/20px var(--roboto);
+}
+.site-main .client-area .about-client p{
+	font-size: 14px;
+}
+.site-main .client-area .owl-carousel .owl-item{
+	display: flex;
+	justify-content: center;
+	padding: 0 1.5rem;
+}
+.site-main .client-area .owl-carousel .owl-dots .owl-dot.active span{
+	background: #854fee;
+	height: 12px;
+	width: 12px;
+}
+/* End About Area */
+
+/* Start Contact Area */
+.site-main .contact-area .contact{
+	background: url('../img/contact-bg.png') no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	border-radius: 4px;}
+.site-main .contact-area .contact-title h4{
+	font: normal 700 30px/30px var(--roboto);
+	color: whitesmoke;
+	padding-top: 2rem;
+}
+.site-main .contact-area .contact-title p{
+	color: whitesmoke;
+}
+.site-main .contact-area .contact-title p.contact-text{
+	font: normal 400 14px/5px var(--roboto);
+}
+.site-main .contact-area .text-input input{
+	border: none;
+	border: 1px solid whitesmoke;
+	background: transparent;
+	padding: 1.5rem 1rem;
+	color: whitesmoke;
+	font: normal 500 17px/20px var(--roboto);
+}
+.site-main .contact-area .text-input input::placeholder{
+	color: whitesmoke;
+}
+.site-main .contact-area .contact button{
+	padding: .8rem 2rem;
+	background: whitesmoke;
+	color: #854fee;
+	border: none;
+	font: normal 700 20px/22px var(--roboto);
+	transition: 0.2s linear;
+	border-radius: 4px;
+	margin-bottom: 4rem;
+	box-sizing: border-box;
+}
+.site-main .contact-area .contact button:hover{
+	background: #FF054D;
+	color: #fff;
+}
+/* End contact Area */
+
+
+/* Start Footer Area */
+.footer-area{
+	padding: 3rem 0;
+	background: url('../img/footer-bg.png') no-repeat;
+}
+.footer-area .social h5{
+	font: normal 500 23px/30px var(--roboto);
+}
+.footer-area .social a{
+	margin: 0.8rem;
+}
+.footer-area .social a > i{
+	font-size: 22px;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	color: var(--primary-color);
+	background: #E7E3EA;
+}
+.footer-area .social a > i:hover{
+	background: var(--gradient-color);
+	color: whitesmoke;
+}
+/* End Footer Area */
+
+

@@ -1,0 +1,106 @@
+/* media query */
+@media(max-width: 760px) {
+	
+	/* navbar */
+	.header-area .navbar .nav-link{
+		height: 40px;
+		line-height: 40px;
+		
+		border-radius: 5px;
+		margin: 1px 15px;
+	}
+	.header-area .navbar .active .nav-link,
+	.header-area .navbar .nav-link:hover{
+		background: var(--gradient-color);
+		color: #fff;
+	}
+	/* about area */
+	.site-main .about-area{
+		margin-top: 4rem;
+	}
+	
+	/* skill area */
+	.site-main .skill-area .experience-area .years-area{
+		background: url('../img/client-info-bg.png') no-repeat 45px 20px;
+		padding: 3rem 3rem;
+		width: 100%;
+		height: 15rem;
+		position: relative;
+	}
+	.site-main .skill-area .experience-area .bg-panel{
+		position: absolute;
+		left: -70%;
+		top: 0%;
+		background: rgba(71, 88, 221, 0.03);
+		width: 400px;
+		height: 400px;
+		margin-left: 70%;
+		z-index: -1;
+	}
+	.site-main .skill-area .experience-area .call-area{
+		padding-left: 3rem;
+	}
+	
+	/* project area */
+	.site-main .project-area{
+		padding-top: 2rem;
+	}
+
+	.site-main .project-area .title-h1{
+		font: normal 700 24px/25px var(--roboto);
+	}
+
+	.site-main .project-area .btn-group button{
+		font: normal 400 14px/60px var(--roboto);
+	}
+	
+	/* client area */
+	.site-main .client-area .client-title .title-h1{
+		font: normal 700 24px/25px var(--roboto);
+	}
+	
+	/* contact area */
+	.site-main .contact-area .contact button{
+		margin-top: 5px;
+	}
+
+}
+
+@media(max-width: 980px) {
+
+	/* banner area */
+	.site-main .site-banner .site-title h3{
+		padding-top: 6rem;
+		font-size: 28px;
+	}
+	.site-main .site-banner .site-title h1{
+		font-size: 40px;
+		margin-top: -2rem;
+	}
+	.site-main .site-banner .site-title h4{
+		margin-top: -2rem;
+		font-size: 20px;
+	}
+	.site-main .banner-image{
+		display: none;
+	}
+	
+	/* about area */
+	.site-main .about-area .about-image-section{
+		display: none;
+	}
+	.site-main .about-area .about-title h2 > span{
+		display: inline;
+		font: normal bold 34px/35px var(--roboto);
+		letter-spacing: 2px;
+	}
+
+	/* skill area */
+	.site-main .skill-area .title-text{
+		font: normal bold 34px/35px var(--roboto);
+		padding-bottom: 5px;
+		border-bottom: 4px solid var(--primary-color);
+		border-radius: 5px;
+	}
+
+}

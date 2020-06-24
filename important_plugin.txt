@@ -1,0 +1,8 @@
+plugin 1:
+	isotope
+
+plugin 2:
+	magnific popup
+
+plugin 3:
+	owl-carosel
